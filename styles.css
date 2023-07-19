@@ -1,15 +1,31 @@
 body {
-  margin: 0;
+  margin: 10;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  background-color: pink;
+
 }
 
-/* Style the header */
 header {
   background-color: aqua;
   padding: 20px;
   text-align: match-parent;
   font-size: 50px;
+  font-weight: normal;
   color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flower-pic {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.menu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +33,7 @@ header {
 }
 
 header img {
-  max-height: 200px;
+  max-height: 175px;
 }
 
 .topnav {
@@ -49,8 +65,52 @@ header img {
 .flex-container {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   gap: 1rem;
   background-color: green;
+}
+
+.home {
+  background-color: pink;
+}
+
+.flex-size-25 {
+  flex-basis: 25%;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-size-50 {
+  flex-basis: 50%;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.easy-links {
+  list-style-type: none;
+}
+
+
+
+
+/* Container for flexboxes */
+.flex-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background-color: aqua;
+  font-weight: normal;
 }
 
 .home {
@@ -59,6 +119,12 @@ background-color: pink;
 
 .flex-size-25 {
   flex-basis: 25%;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .flex-size-50 {
@@ -69,6 +135,53 @@ background-color: pink;
     align-items: center;
 }
 
-.easy-links {
-  list-style-type: none;
+footer {
+  background-color: aqua;
+  min-height: 10vh;
+  padding: 20px;
+  display: flex;
+  text-align: match-parent;
+  font-size: 30px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer > div {
+  flex:1;
+}
+
+.copyright {
+  color: black;
+}
+
+.contact{
+  color: black;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 40px;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 40px;
+  text-align: center;
+}
+
+h2 .title {
+  display: block;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 40px;
 }
