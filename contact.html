@@ -1,49 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="styles.css" />
-    <meta charset="UTF-8">
-    <meta name="Description" content="INF 6420 Project">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Dahlia's Online Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="Description" content="INF 6420 Project">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dahlia Knowles Online Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
     <img src="images/white-hibiscus.jpg" alt="Dahlia's Online Portfolio" class="flower-pic" />
     <div class="menu">
     <img src="images/dahlia-pic.png" alt="Dahlia's Online Portfolio" />
     <div class="topnav">
-      <a href="index.html">Home</a>
+      <a class="active" href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a class="active" href="contact.html">Contact</a>
+      <a href="contact.html">Contact</a>
     </div>
   </div>
     <img src="images/white-hibiscus.jpg" alt="Dahlia's Online Portfolio" class="flower-pic" />
   </header>
-    <main>
-        <div>
-            <img src="images/white-hibiscus.jpg" alt="picture of Dahlia"></div>
-        <div>
-          <h1 id="section-title">Section Title</h1>
-            <p>Would you like to work with me? Please fill out my contact form.</p>
-            <a href="aria-Label led by="Section title">Learn More</a>
-        </div>
+
+
+  <div>
+    <main class="flex-container home">
+      <div class="column flex-size-25">
+        <h1>Inspiration</h1>
+        <h1>
+          <p>"When life gives you lemons, turn it into lemonade."</p>
+          <p>
+          </p>
+        </h1>
+      </div>
+
+      <div class="column flex-size-50">
+        <h2>Contact Form</h2>
+        <h2>
+          <form action="https://formspree.io/f/xleygdeg" method="post" class="validate">
+            <label for="name">Your Name</label>
+            <input name="name" id="name" type="text" class="form-input">
+            
+            <label for="email">Your Email</label>
+            <input name="email" id="email" type="email" class="form-input" required>
+            
+            <label for="message">Your Message</label>
+            <textarea name="message" name="message" class="form-input" rows="4" required></textarea>
+            
+            <!-- your other form fields go here -->
+            <button type="submit">Submit</button>
+          </form>
+          
+        </h2>
+      </div>
+      <div class="column flex-size-25">
+        <h3>Easy Links!</h3>
+        <h3>
+          <ul class="easy-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </h3>
+      </div>
     </main>
+
     <footer>
-        <div>
-          <h2>Start a Project</h2>
-          <p>We are ready for the challenge!</p>
-        </div>
-        <div>
-          <h2>Contact Me</h2>
-          <address>P.O. Box 6515 Christiansted, VI  00823</address>
-          <tel> (340) 777 7777</tel>
-        </div>
-          <h2>Seeking a Job</h2>
-          <p>Hire Me!</p>
-       </div>
-       <div>
+      <div class="column flex-size-25">
+        <h1>Contact Me</h1>
+        <a href="mailto:dahlia.knowles@gmail.com">dahlia.knowles@gmail.com</a>
+      </div>
+      <div class="column flex-size-50">
+        <h2>Sitemap</h2>
+        <ul class="easy-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="column flex-size-25">
+        Copyright 2023, Dahlia
+      </div>
     </footer>
+
+
+  </div>
 </body>
+
 </html>
